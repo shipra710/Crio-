@@ -44,13 +44,21 @@ public class App {
         //  pl.Post_on_linkedin();        
          //End post on linkedin       
 
-          //Start post on linkedin
+          // Start Print all text
          FrameText ft = new FrameText(); // Initialize your test class
 
         //TODO: call your test case functions one after other here
 
          ft.Text();        
-         //End post on linkedin  
+         //End Print all text  
+
+         // Start Window handle
+         WindowHandle wh = new WindowHandle(); // Initialize your test class
+
+        //TODO: call your test case functions one after other here
+
+         wh.Handle();        
+         //End Window handle
 
         tests.endTest(); // End your test by clearning connections and closing browser
     }
