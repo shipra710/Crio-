@@ -10,7 +10,7 @@ public class PostOnLinkedIn {
      ChromeDriver driver;
     public PostOnLinkedIn()
     {
-        System.out.println("Constructor: CountHyperLink");
+        System.out.println("Constructor: PostOnLinkedIn");
         WebDriverManager.chromedriver().timeout(30).setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();

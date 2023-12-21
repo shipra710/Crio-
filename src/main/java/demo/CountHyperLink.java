@@ -21,7 +21,7 @@ public class CountHyperLink {
 
     public void endTest()
     {
-        System.out.println("End Test: TestCases");
+        System.out.println("End Test: CountHyperLink");
         driver.close();
         driver.quit();
 

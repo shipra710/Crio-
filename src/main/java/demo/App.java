@@ -37,12 +37,20 @@ public class App {
          //End Count Hyperlinks on Bookmyshow        
 
          //Start post on linkedin
-         PostOnLinkedIn pl = new PostOnLinkedIn(); // Initialize your test class
+        //  PostOnLinkedIn pl = new PostOnLinkedIn(); // Initialize your test class
+
+        // //TODO: call your test case functions one after other here
+
+        //  pl.Post_on_linkedin();        
+         //End post on linkedin       
+
+          //Start post on linkedin
+         FrameText ft = new FrameText(); // Initialize your test class
 
         //TODO: call your test case functions one after other here
 
-         pl.Post_on_linkedin();        
-         //End post on linkedin       
+         ft.Text();        
+         //End post on linkedin  
 
         tests.endTest(); // End your test by clearning connections and closing browser
     }

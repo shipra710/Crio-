@@ -19,7 +19,7 @@ public class SearchAmazon {
 
     public void endTest()
     {
-        System.out.println("End Test: TestCases");
+        System.out.println("End Test: SearchAmazon");
         driver.close();
         driver.quit();
 
