@@ -36,13 +36,13 @@ public class App {
          Ch.count();        
          //End Count Hyperlinks on Bookmyshow        
 
-         //Start Count Hyperlinks on Bookmyshow
+         //Start post on linkedin
          PostOnLinkedIn pl = new PostOnLinkedIn(); // Initialize your test class
 
         //TODO: call your test case functions one after other here
 
          pl.Post_on_linkedin();        
-         //End Count Hyperlinks on Bookmyshow       
+         //End post on linkedin       
 
         tests.endTest(); // End your test by clearning connections and closing browser
     }
