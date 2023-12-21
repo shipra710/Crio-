@@ -19,15 +19,22 @@ public class App {
 
         //END Tests
 
+        // Start SearchAmzon on Google
          SearchAmazon tests = new SearchAmazon(); // Initialize your test class
 
         //TODO: call your test case functions one after other here
 
         tests.Search();
 
-        //END Tests
+        //END SearchAmzon on Google
 
-//update
+        //Start Count Hyperlinks on Bookmyshow
+        CountHyperLink Ch = new CountHyperLink(); // Initialize your test class
+
+        //TODO: call your test case functions one after other here
+
+         Ch.count();        
+         //End Count Hyperlinks on Bookmyshow        
 
         tests.endTest(); // End your test by clearning connections and closing browser
     }
