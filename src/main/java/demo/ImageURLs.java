@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -30,15 +29,11 @@ public class ImageURLs {
 
     public void Img() throws InterruptedException {
         // Nevigate the URL
-        // Navigate to the specified URL
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
         driver.get("https://in.bookmyshow.com/explore/home/chennai");
-
-        // Scroll down the whole page
-        scrollPage(driver, 500);  // Adjust the scroll amount as needed
-
-        // Scroll back to the top of the page
-        scrollToTop(driver);
         // find the image
+        js.executeScript("window.scrollBy(0, 800)");
         List<WebElement> recommendedMoviesImages = driver.findElements(
                 By.xpath("//h2[text() = 'Recommended Movies']/parent::div/parent::div/parent::div/parent::div//img"));
         // print Image URLS
@@ -47,6 +42,11 @@ public class ImageURLs {
             System.out.println(image.getAttribute("src"));
         }
         Thread.sleep(3000);
+
+         
+      
+      
+    //   js.executeScript("window.scrollBy(0, 500)");
 
         // Print Name of the 2nd item in the Premiere list
         WebElement Pname = driver.findElement(By.xpath("//h2[text() = 'Premieres']/ancestor::div[@class='sc-133848s-4 kFcBGr']//a[2]//h3"));
@@ -59,31 +59,5 @@ public class ImageURLs {
         System.out.println("Language of the 2nd item in the Premiere list " + Lname.getText());
 
     }
-
-        private static void scrollPage(WebDriver driver, int scrollAmount) {
-            JavascriptExecutor js = (JavascriptExecutor) driver;
-            long initialHeight;
-            long currentHeight = (long) js.executeScript("return Math.max( document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);");
-    
-            do {
-                initialHeight = currentHeight;
-                js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
-    
-                try {
-                    Thread.sleep(1000); // Adjust sleep time based on your preference
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-    
-                currentHeight = (long) js.executeScript("return Math.max( document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);");
-    
-            } while (currentHeight > initialHeight);
-    }
-
-    private static void scrollToTop(WebDriver driver) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollTo(0, 0);");
-    }
-
 
 }

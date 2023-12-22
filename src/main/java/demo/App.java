@@ -20,17 +20,17 @@ public class App {
         //END Tests
 
         // Start SearchAmzon on Google
-        //  SearchAmazon tests = new SearchAmazon(); // Initialize your test class
+         SearchAmazon tests = new SearchAmazon(); // Initialize your test class
         // //TODO: call your test case functions one after other here
-        // tests.Search();
-        // tests.endTest();
+        tests.Search();
+        tests.endTest();
         // // //END SearchAmzon on Google
 
         // // //Start Count Hyperlinks on Bookmyshow
-        // CountHyperLink Ch = new CountHyperLink(); // Initialize your test class
+        CountHyperLink Ch = new CountHyperLink(); // Initialize your test class
         // // //TODO: call your test case functions one after other here
-        //  Ch.count();        
-        //  Ch.endTest();
+         Ch.count();        
+         Ch.endTest();
          //End Count Hyperlinks on Bookmyshow        
 
          //Start post on linkedin
@@ -43,24 +43,24 @@ public class App {
          //End post on linkedin       
 
           // Start Print all text
-        //  FrameText ft = new FrameText(); // Initialize your test class
+         FrameText ft = new FrameText(); // Initialize your test class
         // // //TODO: call your test case functions one after other here
-        //  ft.Text();        
-        //  ft.endTest();
+         ft.Text();        
+         ft.endTest();
         //  //End Print all text  
 
         //  // Start Window handle
-        //  WindowHandle wh = new WindowHandle(); // Initialize your test class
+         WindowHandle wh = new WindowHandle(); // Initialize your test class
         // // //TODO: call your test case functions one after other here
-        //  wh.Handle();
-        //  wh.endTest();        
+         wh.Handle();
+         wh.endTest();        
         //  //End Window handle
 
         //  // Start Window handle
-        //  IMDB ir = new IMDB(); // Initialize your test class
+         IMDB ir = new IMDB(); // Initialize your test class
         // //TODO: call your test case functions one after other here
-        //  ir.ImdbRatings();   
-        //  ir.endTest();     
+         ir.ImdbRatings();   
+         ir.endTest();     
          //End Window handle
 
          ImageURLs iUrLs = new ImageURLs(); // Initialize your test class
