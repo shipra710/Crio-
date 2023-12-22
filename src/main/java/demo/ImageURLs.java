@@ -33,7 +33,7 @@ public class ImageURLs {
 
         driver.get("https://in.bookmyshow.com/explore/home/chennai");
         // find the image
-        js.executeScript("window.scrollBy(0, 800)");
+        
         List<WebElement> recommendedMoviesImages = driver.findElements(
                 By.xpath("//h2[text() = 'Recommended Movies']/parent::div/parent::div/parent::div/parent::div//img"));
         // print Image URLS
@@ -42,11 +42,8 @@ public class ImageURLs {
             System.out.println(image.getAttribute("src"));
         }
         Thread.sleep(3000);
-
-         
       
-      
-    //   js.executeScript("window.scrollBy(0, 500)");
+      js.executeScript("window.scrollBy(0, 500)");
 
         // Print Name of the 2nd item in the Premiere list
         WebElement Pname = driver.findElement(By.xpath("//h2[text() = 'Premieres']/ancestor::div[@class='sc-133848s-4 kFcBGr']//a[2]//h3"));
